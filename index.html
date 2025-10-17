@@ -3,7 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roadside Tech</title>
+    <title>Roadside Tech — Instant Help</title>
+    <style>
+      :root { --bg:#0f172a; --card:#111827; --soft:#1f2937; --text:#e5e7eb; --muted:#9ca3af; --accent:#22c55e; }
+      * { box-sizing: border-box; }
+      body { margin:0; background:linear-gradient(180deg,#0b1223,#0f172a); color:var(--text); font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif; }
+      .wrap { max-width: 640px; margin: 0 auto; padding: 24px; }
+      .logo { display:flex; gap:10px; align-items:center; font-weight:800; font-size:32px; letter-spacing:.3px; }
+      .car { font-size:28px }
+      .card { margin-top:18px; background:linear-gradient(180deg,#0e152a,#101827); border:1px solid #1f2937; border-radius:16px; padding:18px; box-shadow: 0 20px 40px rgba(0,0,0,.35); }
+      label { display:block; margin:12px 0 6px; font-size:14px; color:var(--muted); }
+      input, select, textarea { width:100%; padding:12px 14px; border-radius:12px; background:#0b1223; border:1px solid #263042; color:var(--text); outline:none; }
+      textarea { min-height:90px; resize:vertical; }
+      .row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+      .btn { margin-top:14px; width:100%; padding:14px 16px; border-radius:12px; border:none; font-weight:700; background:linear-gradient(90deg,#22c55e,#16a34a); color:#03110a; cursor:pointer; }
+      .btn:active { transform: translateY(1px); }
+      .muted { color:var(--muted); font-size:14px; }
+      .center { text-align:center; padding:28px 8px; }
+      .pill { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; background:#0b1223; border:1px solid #263042; border-radius:999px; font-size:13px; color:var(--muted); }
+      .eta { display:inline-block; margin-top:6px; background:#052e1a; border:1px solid #0c6d35; color:#a7f3d0; padding:6px 10px; border-radius:999px; font-weight:700; font-size:13px; }
+      .success { color:#a7f3d0; font-weight:700; }
+      .topnote { margin-top:6px; }
+      .inline { display:flex; gap:10px; }
+      .link { color:#86efac; text-decoration: underline; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
